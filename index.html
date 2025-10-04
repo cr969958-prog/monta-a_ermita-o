@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montaña del Ermitaño - Figuras Anime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Montaña del Ermitaño" />
+      <h1>Montaña del Ermitaño</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#carrito">🛒</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="inicio" class="banner">
+    <h2>El refugio para todo coleccionista otaku</h2>
+    <p>Encuentra figuras exclusivas y productos de tus animes favoritos.</p>
+    <a href="#tienda" class="btn">Ver Tienda</a>
+  </section>
+
+  <!-- Tienda -->
+  <section id="tienda" class="tienda">
+    <h2>Catálogo</h2>
+    <div class="productos">
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="img/naruto.jpg" alt="Naruto">
+        <h3>Naruto Uzumaki</h3>
+        <p>$800 MXN</p>
+        <button onclick="agregarCarrito('Naruto Uzumaki', 800)">Añadir</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="img/luffy.jpg" alt="Luffy">
+        <h3>Monkey D. Luffy</h3>
+        <p>$950 MXN</p>
+        <button onclick="agregarCarrito('Monkey D. Luffy', 950)">Añadir</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="img/goku.jpg" alt="Goku">
+        <h3>Son Goku</h3>
+        <p>$1200 MXN</p>
+        <button onclick="agregarCarrito('Son Goku', 1200)">Añadir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrito -->
+  <section id="carrito" class="carrito">
+    <h2>Tu Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p id="total">Total: $0 MXN</p>
+    <button class="btn">Finalizar Compra</button>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <b>Montaña del Ermitaño</b> creemos que el coleccionismo es más que un hobby:
+      es una forma de vida. Ofrecemos figuras originales, accesorios y productos
+      exclusivos para todos los fanáticos del anime.
+    </p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>WhatsApp: <a href="https://wa.me/5211234567890">+52 123 456 7890</a></p>
+    <p>Email: contacto@montanadelermitanio.com</p>
+    <p>Instagram: @montana.ermitanio</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Montaña del Ermitaño - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
